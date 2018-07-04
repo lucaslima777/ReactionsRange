@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="83"
+    android:viewportHeight="83">
+
+    <path
+        android:name="unhappy"
+        android:strokeColor="#FFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="4"
+        android:pathData="M12,57c15.8-10.5,35.8-12.8,60-7, M22,41c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2C20,40.1,20.9,41,22,41, M55,39c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2C53,38.1,53.9,39,55,39" />
+
+</vector>

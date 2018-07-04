@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ReactionsRange</string>
+    <string name="title">Reactions Range</string>
+
+    <string name="reactions_shake">Reactions Shake</string>
+    <string name="reactions_colored">Reactions Colored</string>
+    <string name="reactions_progress">Reactions Progress</string>
+    <string name="reactions_visibility">Reactions Visibility</string>
+
+    <string name="text_button">send</string>
+</resources>

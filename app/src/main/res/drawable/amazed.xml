@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="83"
+    android:viewportHeight="83">
+
+    <path
+        android:name="amazed"
+        android:strokeColor="#FFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="4"
+        android:pathData="M12,45c10.9,29.4,48.7,26.7,60-15, M14,25c1.1,0,2-2.2,2-5c0-2.8-0.9-5-2-5s-2,2.2-2,5C12,22.8,12.9,25,14,25, M62,29c1.1,0,2-2.2,2-5c0-2.8-0.9-5-2-5s-2,2.2-2,5C60,26.8,60.9,29,62,29" />
+
+</vector>

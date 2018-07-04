@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bad_color_1">#0575E6</color>
+    <color name="bad_color_2">#021B79</color>
+    <color name="bad_color_3">#0575E6</color>
+
+    <color name="light_gray">#F0F5F5</color>
+    <color name="translucent_white">#80FFFFFF</color>
+    <color name="dark_gray">#243037</color>
+
+    <color name="light_blue">#59AAFF</color>
+    <color name="blue">#2C7DE3</color>
+    <color name="dark_blue">#1C6AC9</color>
+
+    <color name="reactions_range">#ECE9E6</color>
+    <color name="textview_shadow_color">#ff9e9e9e</color>
+    <color name="text_color">#033F63</color>
+
+    <color name="button_shadow_color">#A8A8A8</color>
+    <color name="button_text_color">#FFFFFF</color>
+
+    <color name="red">#ff5e57</color>
+    <color name="orange">#ffa801</color>
+    <color name="blue_toast">#3c40c6</color>
+    <color name="green">#05c46b</color>
+    <color name="gray">#485460</color>
+
+    <color name="bad">#C04848</color>
+    <color name="unhappy">#F09819</color>
+    <color name="natural">#ffe259</color>
+    <color name="satisfied">#fffc00</color>
+    <color name="amazed">#38ef7d</color>
+</resources>

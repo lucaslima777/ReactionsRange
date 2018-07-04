@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraint_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_layout_margin_top"
+            android:fontFamily="@font/abeezeeregular"
+            android:text="@string/title"
+            android:textColor="@color/reactions_range"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_1"
+            android:layout_width="@dimen/card_layout_width"
+            android:layout_height="@dimen/card_layout_height"
+            android:layout_marginTop="@dimen/card_1_layout_margin_top"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_card_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textview_layout_margin_top"
+                    android:fontFamily="@font/ptmono"
+                    android:shadowColor="@color/textview_shadow_color"
+                    android:shadowDx="@dimen/textview_shadow_dx"
+                    android:shadowDy="@dimen/textview_shadow_dy"
+                    android:shadowRadius="@dimen/textview_shadow_radius"
+                    android:text="@string/reactions_shake"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/textview_size"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_down_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_top"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="visible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_up_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_top"
+                    android:src="@drawable/arrow_up"
+                    android:visibility="invisible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_reaction_margin_top"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_bad_small_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/reaction_bad_small"
+                            layout="@layout/reaction_bad_small" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_unhappy_small_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_unhappy_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_unhappy_small"
+                            layout="@layout/reaction_unhappy_small" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_natural_small_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_natural_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_natural_small"
+                            layout="@layout/reaction_natural_small" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_satisfied_small_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_satisfied_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_satisfied_small"
+                            layout="@layout/reaction_satisfied_small" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_amazed_small_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_amazed_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_amazed_small"
+                            layout="@layout/reaction_amazed_small" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_layout_height"
+                    android:layout_marginEnd="@dimen/view_layout_margin_end"
+                    android:layout_marginStart="@dimen/view_layout_margin_start"
+                    android:layout_marginTop="@dimen/view_layout_margin_top"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_card_1" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_seekbar_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_seekbar_margin_top"
+                    android:padding="@dimen/constraint_seekbar_padding"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_1">
+
+                    <include
+                        android:id="@+id/seekbar_1"
+                        layout="@layout/seekbar" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <reactionsrange.com.example.lucaslima.reactionsrange.CardExpand
+            android:id="@+id/expanded_layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/expanded_layout_height"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_1">
+
+
+            <Button
+                android:id="@+id/expand_button_1"
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/button_layout_margin_top"
+                android:background="@drawable/button_style_1"
+                android:fontFamily="@font/abeezeeregular"
+                android:shadowColor="@color/button_shadow_color"
+                android:shadowDx="@dimen/button_shadow_dx"
+                android:shadowDy="@dimen/button_shadow_dy"
+                android:shadowRadius="@dimen/button_shadow_radius"
+                android:text="@string/text_button"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size"
+                app:canExpand="true" />
+
+
+        </reactionsrange.com.example.lucaslima.reactionsrange.CardExpand>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_2"
+            android:layout_width="@dimen/card_layout_width"
+            android:layout_height="@dimen/card_layout_height"
+            android:layout_marginTop="@dimen/card_2_layout_margin_top"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/expanded_layout_1">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint_card_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_card_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textview_layout_margin_top"
+                    android:fontFamily="@font/ptmono"
+                    android:shadowColor="@color/textview_shadow_color"
+                    android:shadowDx="@dimen/textview_shadow_dx"
+                    android:shadowDy="@dimen/textview_shadow_dy"
+                    android:shadowRadius="@dimen/textview_shadow_radius"
+                    android:text="@string/reactions_colored"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/textview_size"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_down_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_top"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="visible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_up_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_top"
+                    android:src="@drawable/arrow_up"
+                    android:visibility="invisible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_reaction_margin_top"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_bad_small_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/reaction_bad_gray"
+                            layout="@layout/reaction_bad_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_unhappy_small_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_unhappy_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_unhappy_gray"
+                            layout="@layout/reaction_unhappy_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_natural_small_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_natural_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_natural_gray"
+                            layout="@layout/reaction_natural_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_satisfied_small_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_satisfied_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_satisfied_gray"
+                            layout="@layout/reaction_satisfied_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_amazed_small_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_amazed_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_amazed_gray"
+                            layout="@layout/reaction_amazed_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_layout_height"
+                    android:layout_marginEnd="@dimen/view_layout_margin_end"
+                    android:layout_marginStart="@dimen/view_layout_margin_start"
+                    android:layout_marginTop="@dimen/view_layout_margin_top"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_card_2" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_seekbar_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_seekbar_margin_top"
+                    android:padding="@dimen/constraint_seekbar_padding"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_2">
+
+                    <include
+                        android:id="@+id/seekbar_2"
+                        layout="@layout/seekbar" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <reactionsrange.com.example.lucaslima.reactionsrange.CardExpand
+            android:id="@+id/expanded_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/expanded_layout_height"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_2">
+
+
+            <Button
+                android:id="@+id/expand_button_2"
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/button_layout_margin_top"
+                android:background="@drawable/button_style_1"
+                android:fontFamily="@font/abeezeeregular"
+                android:shadowColor="@color/button_shadow_color"
+                android:shadowDx="@dimen/button_shadow_dx"
+                android:shadowDy="@dimen/button_shadow_dy"
+                android:shadowRadius="@dimen/button_shadow_radius"
+                android:text="@string/text_button"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size"
+                app:canExpand="true" />
+
+
+        </reactionsrange.com.example.lucaslima.reactionsrange.CardExpand>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_3"
+            android:layout_width="@dimen/card_layout_width"
+            android:layout_height="@dimen/card_layout_height"
+            android:layout_marginTop="@dimen/card_3_layout_margin_top"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/expanded_layout_2">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint_card_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_card_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textview_layout_margin_top"
+                    android:fontFamily="@font/ptmono"
+                    android:shadowColor="@color/textview_shadow_color"
+                    android:shadowDx="@dimen/textview_shadow_dx"
+                    android:shadowDy="@dimen/textview_shadow_dy"
+                    android:shadowRadius="@dimen/textview_shadow_radius"
+                    android:text="@string/reactions_progress"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/textview_size"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_down_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_end"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="visible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_up_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_end"
+                    android:src="@drawable/arrow_up"
+                    android:visibility="invisible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_reaction_margin_top"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_bad_small_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/reaction_bad_gray_2"
+                            layout="@layout/reaction_bad_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_unhappy_small_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_unhappy_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_unhappy_gray_2"
+                            layout="@layout/reaction_unhappy_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_natural_small_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_natural_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_natural_gray_2"
+                            layout="@layout/reaction_natural_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_satisfied_small_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_satisfied_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_satisfied_gray_2"
+                            layout="@layout/reaction_satisfied_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_amazed_small_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_amazed_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_amazed_gray_2"
+                            layout="@layout/reaction_amazed_gray" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_layout_height"
+                    android:layout_marginEnd="@dimen/view_layout_margin_end"
+                    android:layout_marginStart="@dimen/view_layout_margin_start"
+                    android:layout_marginTop="@dimen/view_layout_margin_top"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_card_3" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_seekbar_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_seekbar_margin_top"
+                    android:padding="@dimen/constraint_seekbar_padding"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_3">
+
+                    <include
+                        android:id="@+id/seekbar_3"
+                        layout="@layout/seekbar" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <reactionsrange.com.example.lucaslima.reactionsrange.CardExpand
+            android:id="@+id/expanded_layout_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/expanded_layout_height"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_3">
+
+
+            <Button
+                android:id="@+id/expand_button_3"
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/button_layout_margin_top"
+                android:background="@drawable/button_style_1"
+                android:fontFamily="@font/abeezeeregular"
+                android:shadowColor="@color/button_shadow_color"
+                android:shadowDx="@dimen/button_shadow_dx"
+                android:shadowDy="@dimen/button_shadow_dy"
+                android:shadowRadius="@dimen/button_shadow_radius"
+                android:text="@string/text_button"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size"
+                app:canExpand="true" />
+
+
+        </reactionsrange.com.example.lucaslima.reactionsrange.CardExpand>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_4"
+            android:layout_width="@dimen/card_layout_width"
+            android:layout_height="@dimen/card_layout_height"
+            android:layout_marginTop="@dimen/card_4_layout_margin_top"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/expanded_layout_3">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint_card_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_card_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textview_layout_margin_top"
+                    android:fontFamily="@font/ptmono"
+                    android:shadowColor="@color/textview_shadow_color"
+                    android:shadowDx="@dimen/textview_shadow_dx"
+                    android:shadowDy="@dimen/textview_shadow_dy"
+                    android:shadowRadius="@dimen/textview_shadow_radius"
+                    android:text="@string/reactions_visibility"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/textview_size"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_down_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_top"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="visible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrow_up_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/imageview_layout_margin_end"
+                    android:layout_marginTop="@dimen/imageview_layout_margin_top"
+                    android:src="@drawable/arrow_up"
+                    android:visibility="invisible"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_reaction_margin_top"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_bad_small_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/reaction_bad_visibility"
+                            layout="@layout/reaction_bad_small"
+                            android:visibility="invisible"
+                            />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_unhappy_small_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_unhappy_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_unhappy_visibility"
+                            layout="@layout/reaction_unhappy_small"
+                            android:visibility="invisible"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_natural_small_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_natural_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_natural_visibility"
+                            layout="@layout/reaction_natural_small"
+                            android:visibility="invisible"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_satisfied_small_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_satisfied_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_satisfied_visibility"
+                            layout="@layout/reaction_satisfied_small"
+                            android:visibility="invisible"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraint_reaction_amazed_small_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/reaction_amazed_margin_start"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <include
+                            android:id="@+id/reaction_amazed_visibility"
+                            layout="@layout/reaction_amazed_small"
+                            android:visibility="invisible"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_layout_height"
+                    android:layout_marginEnd="@dimen/view_layout_margin_end"
+                    android:layout_marginStart="@dimen/view_layout_margin_start"
+                    android:layout_marginTop="@dimen/view_layout_margin_top"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_card_4" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraint_seekbar_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/constraint_seekbar_margin_top"
+                    android:padding="@dimen/constraint_seekbar_padding"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_4">
+
+                    <include
+                        android:id="@+id/seekbar_4"
+                        layout="@layout/seekbar" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <reactionsrange.com.example.lucaslima.reactionsrange.CardExpand
+            android:id="@+id/expanded_layout_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/expanded_layout_height"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_4">
+
+
+            <Button
+                android:id="@+id/expand_button_4"
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/button_layout_margin_top"
+                android:background="@drawable/button_style_1"
+                android:fontFamily="@font/abeezeeregular"
+                android:shadowColor="@color/button_shadow_color"
+                android:shadowDx="@dimen/button_shadow_dx"
+                android:shadowDy="@dimen/button_shadow_dy"
+                android:shadowRadius="@dimen/button_shadow_radius"
+                android:text="@string/text_button"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size"
+                app:canExpand="true" />
+
+
+        </reactionsrange.com.example.lucaslima.reactionsrange.CardExpand>
+
+        <!--<ImageView
+            android:id="@+id/imageview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/avd_anim"/>-->
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
